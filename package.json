@@ -1,0 +1,39 @@
+{
+  "name": "alfred-indodax",
+  "version": "0.0.0",
+  "description": "indodax price",
+  "license": "MIT",
+  "repository": "ace3/alfred-indodax",
+  "author": {
+    "name": "Ignasius Wahyudi",
+    "email": "igniz87@gmail.com",
+    "url": "ignasius.dev"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  },
+  "type": "module"
+}
