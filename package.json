@@ -7,7 +7,7 @@
   "author": {
     "name": "Ignasius Wahyudi",
     "email": "igniz87@gmail.com",
-    "url": "ignasius.dev"
+    "url": "https://ignasius.dev"
   },
   "engines": {
     "node": ">=4"
@@ -20,7 +20,8 @@
   "files": [
     "index.js",
     "icon.png",
-    "info.plist"
+    "info.plist",
+    "9E07FA7B-6A1B-4EF0-AD32-05F68D4A95F6.png"
   ],
   "keywords": [
     "alfred",
