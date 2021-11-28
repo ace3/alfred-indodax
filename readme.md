@@ -23,9 +23,11 @@ $ npm install --global alfred-indodax
 
 ## Screenshots
 `indodax btcidr`
+
 ![](2021-11-28-01-32-37.png)
 
 `indodax all`
+
 ![](2021-11-28-08-46-44.png)
 
 ## License
