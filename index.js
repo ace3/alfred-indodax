@@ -1,8 +1,7 @@
 import alfy from "alfy";
 import dayjs from "dayjs";
-function numberWithCommas(x) {
-	return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-}
+import formatThousands from "format-thousands";
+
 const ticker = alfy.input;
 
 const data = await alfy.fetch("https://indodax.com/api/ticker_all", {
@@ -13,7 +12,7 @@ const item = data.tickers[ticker.replace("idr", "_idr")] || undefined;
 
 if (item) {
 	const date = dayjs(item.server_time * 1000).format("DD MMM YYYY HH:mm:ss");
-	const price = numberWithCommas(item.last);
+	const price = formatThousands(item.last, ".");
 	const output = [
 		{
 			title: `${ticker.replace("idr", "/idr").toUpperCase()} - Rp. ${price}`,
