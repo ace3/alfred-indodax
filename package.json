@@ -14,8 +14,8 @@
   },
   "scripts": {
     "test": "xo && ava",
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "postinstall": "alfy-link",
+    "preuninstall": "alfy-unlink"
   },
   "files": [
     "index.js",
@@ -28,6 +28,7 @@
     "alfy"
   ],
   "dependencies": {
+    "alfred-link": "^0.3.1",
     "alfy": "^0.6.0",
     "dayjs": "^1.10.7"
   },
