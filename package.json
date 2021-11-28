@@ -28,7 +28,8 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.6.0"
+    "alfy": "^0.6.0",
+    "dayjs": "^1.10.7"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
