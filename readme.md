@@ -18,7 +18,7 @@ $ npm install --global alfred-indodax
 - <kbd>CMD + C</kbd> to copy the price.
 
 ## Example Command
-- `indodax btcidr`
+- `indodax btcidr ?amount`
 
 ## Screenshots
 `indodax btcidr`
