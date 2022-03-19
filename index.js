@@ -2,7 +2,7 @@ import alfy from "alfy";
 import dayjs from "dayjs";
 import formatThousands from "format-thousands";
 
-const ticker = alfy.input;
+const [ticker, amount = 1] = alfy.input.split(" ");
 
 const data = await alfy.fetch("https://indodax.com/api/ticker_all", {
 	maxAge: 1000 * 60,
@@ -12,7 +12,7 @@ const item = data.tickers[ticker.replace("idr", "_idr")] || undefined;
 
 if (item) {
 	const date = dayjs(item.server_time * 1000).format("DD MMM YYYY HH:mm:ss");
-	const price = formatThousands(item.last, ".");
+	const price = formatThousands(item.last * amount, ".");
 	const output = [
 		{
 			title: `${ticker.replace("idr", "/idr").toUpperCase()} - Rp. ${price}`,
